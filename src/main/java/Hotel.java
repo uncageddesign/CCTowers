@@ -51,17 +51,14 @@ public class Hotel {
 
     }
 
-    public Double calculateTotalCost(Room room, Booking booking){
-        Double totalCost = room.getNightlyRate() * booking.getNights();
-        return totalCost;
+    public double calculateTotalCost(Room room, Booking booking){
+        return room.getNightlyRate() * booking.getNights();
     }
 
     public void checkIn(Room room, Booking booking){
         removeBookedRoom(booking);
         addCheckedIn(room);
     }
-
-
 
     private void addCheckedIn(Room room) {
         if(!room.getOccupied()){

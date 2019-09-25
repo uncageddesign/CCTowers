@@ -18,7 +18,7 @@ public class Booking {
         this.bookedRooms.add(room);
     }
 
-    public int bookedRoomsAdded() {
+    public int bookedRoomsCount() {
         return this.bookedRooms.size();
     }
 }

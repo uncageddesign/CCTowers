@@ -35,6 +35,6 @@ public class BookingTest {
         // When the room is booked
         booking.addRoomsToBooking(room);
         // Then the number of rooms in booked rooms should be 1
-        assertEquals(1, booking.bookedRoomsAdded());
+        assertEquals(1, booking.bookedRoomsCount());
     }
 }
